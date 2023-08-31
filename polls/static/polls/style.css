@@ -1,6 +1,12 @@
-li a {
-    color: white;
+a {
+    color: red;
+
+}
+a:hover{
+    color: blue;
+    
 }
 body {
     background: white url("images/hero-bg.jpg") no-repeat;
 }
+

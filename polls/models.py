@@ -29,7 +29,12 @@ class Choice(models.Model):
     votes = models.IntegerField(default=0)
     def __str__(self):
         return self.choice_text
-
+    
+class Delete(models.Model):
+    #question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    question_id = models.CharField(max_length=200)
+    def __str__(self):
+        return self.question_id
 
     
     

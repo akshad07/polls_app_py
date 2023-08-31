@@ -7,6 +7,15 @@
     {% for question in latest_question_list %}
     <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
     {% endfor %}
+
+    <form action="" method="post">
+        {%csrf_token%}
+        
+    </form>
+    <a href="http://127.0.0.1:8000/polls/questions/">Click here to Add New Questions</a>
+    <br>
+    <br>
+    <a href="http://127.0.0.1:8000/polls/delete/">Click here to Delete Questions</a>
 </ul>
 {% else %}
 <p>No polls are available.</p>

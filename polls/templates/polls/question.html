@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+</head>
+<body>
+    <form  method="post">
+        {% csrf_token %}
+        {{ questionform }}
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <br>
+    <a href="http://127.0.0.1:8000/polls/">Switch to Polls Application</a>
+    <br>
+    
+    <a href="http://127.0.0.1:8000/polls/delete/">Click here to Delete Questions</a>
+</body>
+</html>
